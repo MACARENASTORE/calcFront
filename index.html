@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +7,38 @@
     <title>Calculadora</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
-
 <body>
-    <!--generar -->
-    <header></header>
-    <nav></nav>
+    <header>
+    </header>
+    <nav>        
+    </nav>
     <main>
-        <form>
-            <div class="form-group">
-                <label for="num1">Número 1</label>
-                <input class="for-control" id="num1" name="num1" type="number" required>
-                <label for="num2">Número 2</label>
-                <input class="for-control" id="num2" name="num2" type="number" required>
-            </div>
-            <button type="submit">Button</button>
+    <form>
+        <div class="container">
+        <div class="form-group">
+            <label for="num1">num 1</label>
+            <input class="form-control" id="num1" name="num1" type="number" required>
+            <label for="num2">num 2</label>
+            <input class="form-control" id="num2" name="num2" type="number" required>
+        </div>
+        
+        <button class="btn btn-primary mt-3 col-md-2" id="sumar" onclick="sumar()">Sumar</button>
+        <button class="btn btn-primary mt-3 col-md-3" id="restar" onclick="restar()">Restar</button>
+        <button class="btn btn-primary mt-3 col-md-3" id="multiplicar" onclick="multiplicar()">Multiplicar</button>
+        <button class="btn btn-primary mt-3 col-md-3" id="dividir" onclick="dividir()">Dividir</button>
+        </div>
+    </form>
+    <div class="container col-md-4">
+        <div class="container btn btn-primary mt-3 " id="resultado" >
+    </div>
+    
 
-        </form>
+    </div>
     </main>
     <footer>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="programa.js"></script>
 </body>
-
 </html>
